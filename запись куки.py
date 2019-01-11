@@ -10,6 +10,9 @@ URL = 'http://vm-as444/?oid=1026435'
 
 browser = webdriver.Chrome('D:\Anconda\envs\фрешдок\chromedriver.exe')
 browser.get(URL)
-time.sleep(30)
+time.sleep(20)
 
 pickle.dump(browser.get_cookies(), open('cookies_freshdoc.pkl', 'wb'))
+
+
+browser.quit()
